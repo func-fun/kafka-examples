@@ -1,0 +1,33 @@
+{
+  "kafka": {
+    "clientId": "kafka-examples",
+    "brokers": ["localhost:9092"],
+    "sasl": {
+      "mechanism": "scram-sha-512",
+      "username": "my-username",
+      "password": "my-password"
+    }
+    // To use SSL client certificates instead of SASL, replace the "sasl" block above with:
+    // "ssl": {
+    //   "ca": "./certs/ca.pem",
+    //   "cert": "./certs/client.pem",
+    //   "key": "./certs/client-key.pem"
+    // }
+  },
+  "schemaRegistry": {
+    "host": "http://localhost:8081",
+    "auth": {
+      "username": "registry-username",
+      "password": "registry-password"
+    }
+  },
+  "topics": [
+    {
+      "topicName": "com.example.event.foo",
+      "keySubject": "com.example.event.foo-key",
+      "payloadSubject": "com.example.event.foo-value",
+      "keyVersion": 1,
+      "payloadVersion": 1
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+node_modules/
+dist/
+
+# Config and message files (keep examples)
+config.jsonc
+messages.json

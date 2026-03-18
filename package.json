@@ -4,7 +4,7 @@
     "produce": "./src/produce.ts"
   },
   "scripts": {
-    "produce": "tsx src/produce.ts"
+    "produce": "node --disable-warning=TimeoutNegativeWarning --import tsx src/produce.ts"
   },
   "dependencies": {
     "@func-fun/kafka-avro-lib": "^1.1.0",

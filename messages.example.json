@@ -1,0 +1,18 @@
+[
+  {
+    "topic": "com.example.event.foo",
+    "key": "message-1",
+    "payload": {
+      "name": "example-1",
+      "value": 42
+    }
+  },
+  {
+    "topic": "com.example.event.foo",
+    "key": "message-2",
+    "payload": {
+      "name": "example-2",
+      "value": 100
+    }
+  }
+]
